@@ -20,7 +20,7 @@ p{
 }
 
 section {
-  padding: 165px 0;
+  padding: 100px 0;
 }
 
 .title-section{
@@ -204,6 +204,18 @@ section {
   width: 100%;
 }
 
+#news .card{
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.123) !important;
+}
+
+#news .card-body{
+  padding: 0.75rem;
+}
+
+.img-news{
+  height: 180px;
+  width : 300px
+}
 #accordion .card{
   box-shadow: none;
 }

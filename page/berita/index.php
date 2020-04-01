@@ -58,8 +58,11 @@
     <!-- FAQ Section -->
     <section id="berita">
       <div class="container">
-      <div class="text-center">
+        <div class="text-center">
           <h2 class="mb-4">Berita Terkini</h2>
+        </div>
+        <div id="news" class="">
+          <!-- ISI BERITA -->
         </div>
       </div>
     </section>
@@ -82,7 +85,7 @@
   <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom JavaScript for this theme -->
-  <script src="/js/main.js"></script>
+  <script src="/js/berita.js"></script>
 
 </body>
 

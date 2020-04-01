@@ -5,7 +5,12 @@
             <a class="navbar-brand" href="index.php"><img src="/assets/about/logo-covid-white.svg" alt="Logo Covid"></a>
             <h5 class="text-white mt-3">Developed By Ammar Muhammad</h5>
 
-            <p class="text-white">Sumber API : <a href="https://kawalcorona.com/">kawalcorona.com</a></p>
+            <p class="text-white">Sumber API :
+              <ul class="text-white">
+                <li>API Kasus Corona : <a href="https://kawalcorona.com/">kawalcorona.com</a></li>
+                <li>Berita Corona : <a href="http://newsapi.org/">newsapi.org</a></li>
+              </ul>
+            </p>
             <p class="text-white">
               <a href="https://www.instagram.com/ammarprojects/?hl=id"><i class="fa fa-instagram mr-3"></i></a>
               <a href="https://www.facebook.com/muhammad.a.ridho.710667" rel="nofollow noreferrer"><i
