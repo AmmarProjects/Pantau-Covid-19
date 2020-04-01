@@ -1,0 +1,32 @@
+{
+    "faq": [
+        {
+            "questions": "Apakah Coronavirus dan COVID-19 itu?",
+            "answer": "Coronavirus merupakan keluarga besar virus yang menyebabkan penyakit pada manusia dan hewan. Pada manusia biasanya menyebabkan penyakit infeksi saluran pernapasan, mulai flu biasa hingga penyakit yang serius seperti Middle East Respiratory Syndrome (MERS) dan Sindrom Pernafasan Akut Berat/ Severe Acute Respiratory Syndrome (SARS). Coronavirus jenis baru yang ditemukan pada manusia sejak kejadian luar biasa muncul di Wuhan Cina, pada Desember 2019, kemudian diberi nama Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-COV2), dan menyebabkan penyakit Coronavirus Disease-2019 (COVID-19)."
+        },
+        {
+            "questions": "Apa saja gejala COVID-19?",
+            "answer": "Gejala umum berupa demam 38C, batuk kering, dan sesak napas. Jika ada orang yang dalam 14 hari sebelum muncul gejala tersebut pernah melakukan perjalanan ke negara terjangkit, atau pernah merawat/kontak erat dengan penderita COVID-19, maka terhadap orang tersebut akan dilakukan pemeriksaan laboratorium lebih lanjut untuk memastikan diagnosisnya. Daftar negara terjangkit dapat dipantau melalui website ini."
+        },
+        {
+            "questions": "Seberapa bahaya COVID-19 ini?",
+            "answer": "Seperti penyakit pernapasan lainnya, infeksi 2019-nCoV dapat menyebabkan gejala ringan termasuk pilek, sakit tenggorokan, batuk, dan demam. Beberapa orang mungkin akan menderita sakit yang parah, seperti disertai pneumonia atau kesulitan bernafas. Walaupun fatalitas penyakit ini masih jarang, namun bagi orang yang berusia lanjut, dan orang-orang dengan kondisi medis yang sudah ada sebelumnya (seperti, diabetes dan penyakit jantung), mereka biasanya lebih rentan untuk menjadi sakit parah."
+        },
+        {
+            "questions": "Bisakah manusia terinfeksi COVID-19 dari hewan?",
+            "answer": "COVID-19 disebabkan oleh salah satu jenis virus dari keluarga besar Coronavirus, yang umumnya ditemukan pada hewan. Sampai saat ini sumber hewan penular COVID-19 belum diketahui, para ahli terus menyelidiki berbagai kemungkinan jenis hewan penularnya."
+        },
+        {
+            "questions": "Berapa lama virus ini bertahan di permukaan benda?",
+            "answer": "Sampai saat ini belum diketahui dengan pasti berapa lama COVID-19 mampu bertahan di permukaan suatu benda, meskipun studi awal menunjukkan bahwa COVID-19 dapat bertahan hingga beberapa jam, tergantung jenis permukaan, suhu, atau kelembaban lingkungan. Namun disinfektan sederhana dapat membunuh virus tersebut sehingga tidak mungkin menginfeksi orang lagi. Dan membiasakan cuci tangan dengan air dan sabun, atau hand-rub berbasis alkohol, serta hindari menyentuh mata, mulut atau hidung (segitiga wajah) lebih efektif melindungi diri Anda."
+        },
+        {
+            "questions": "Siapa saja yang berisiko terinfeksi COVID-19?",
+            "answer": "Orang yang tinggal atau bepergian di daerah di mana virus COVID-19 bersirkulasi sangat mungkin berisiko terinfeksi. Mereka yang terinfeksi adalah orang-orang yang dalam 14 hari sebelum muncul gejala melakukan perjalanan dari negara terjangkit, atau yang kontak erat, seperti anggota keluarga, rekan kerja atau tenaga medis yang merawat pasien sebelum mereka tahu pasien tersebut terinfeksi COVID-19.\nPetugas kesehatan yang merawat pasien yang terinfeksi COVID-19 berisiko lebih tinggi dan harus konsisten melindungi diri mereka sendiri dengan prosedur pencegahan dan pengendalian infeksi yang tepat."
+        },
+        {
+            "questions": "Apakah saya harus selalu menggunakan masker?",
+            "answer": "Pemakaian masker hanya bagi orang yang memiliki gejala infeksi pernapasan (batuk atau bersin), mencurigai infeksi COVID-19 dengan gejala ringan, mereka yang merawat orang yang bergejala seperti demam dan batuk, dan para petugas kesehatan.\nCara yang paling efektif untuk melindungi diri dan orang lain dari penularan COVID-19 adalah mencuci tangan secara teratur, tutup mulut saat batuk dengan lipatan siku atau tisu, dan jaga jarak minimal satu meter dari orang yang bersin atau batuk."
+        }
+    ]
+}

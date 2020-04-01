@@ -203,3 +203,26 @@ section {
 .maps {
   width: 100%;
 }
+
+#accordion .card{
+  box-shadow: none;
+}
+
+.card-header [data-toggle="collapse"]:after {
+  font-family: 'FontAwesome';
+  content: "\f078";
+  float: right;
+  color: grey;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.card-header [data-toggle="collapse"].collapsed:after {
+  content: "\f077";
+  color: #454444;
+}
+
+a, a label{
+  cursor: pointer;
+  margin-bottom:0;
+}

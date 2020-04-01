@@ -55,47 +55,17 @@
       </div>
     </nav>
 
-    <!-- Tentang Section -->
-    <section id="tentang">
+    <!-- FAQ Section -->
+    <section id="berita">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-6">
-          </div>
-          <div class="col-sm-12 col-md-6">
-            <h2 class="mb-2">Tentang Pantau Corona</h2>
-            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe debitis cumque eius
-              exercitationem doloribus distinctio! Assumenda, repudiandae! Quam libero possimus porro facere amet
-              facilis
-              veniam similique accusamus nisi aliquid quis laudantium iure voluptatum id aliquam enim esse inventore
-              veritatis quisquam unde, minima officia neque deleniti voluptatibus! Obcaecati accusantium consequuntur
-              quo,
-              dignissimos, aliquid ut, officiis excepturi alias maxime quae mollitia nemo.</p>
-          </div>
+      <div class="text-center">
+          <h2 class="mb-4">Berita Terkini</h2>
         </div>
       </div>
     </section>
-    <!-- END Tentang Section -->
+    <!-- END FAQ Section -->
 
-    <!-- Perlindungan Section -->
-    <section id="perlindungan" class="bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-6">
-          <h2 class="mb-2">Sumber Data</h2>
-          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe debitis cumque eius
-              exercitationem doloribus distinctio! Assumenda, repudiandae! Quam libero possimus porro facere amet
-              facilis
-              veniam similique accusamus nisi aliquid quis laudantium iure voluptatum id aliquam enim esse inventore
-              veritatis quisquam unde, minima officia neque deleniti voluptatibus! Obcaecati accusantium consequuntur
-              quo,
-              dignissimos, aliquid ut, officiis excepturi alias maxime quae mollitia nemo.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END Perlindungan Section -->
-
-    <!-- Contact -->
+    <!-- Kontak -->
     <?php include '../layout/contact.php'?>
     <!-- Footer -->
     <?php include '../layout/footer.php'?>

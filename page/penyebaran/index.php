@@ -48,7 +48,7 @@
               <a class="nav-link js-scroll-trigger" href="/page/berita/index.php">Berita</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="/page/faq/index.php">Testimoni</a>
+              <a class="nav-link js-scroll-trigger" href="/page/faq/index.php">FAQ</a>
             </li>
           </ul>
         </div>
@@ -183,6 +183,8 @@
     </section>
     <!-- END Global Section -->
 
+    <!-- Contact -->
+    <?php include '../layout/contact.php'?>
     <!-- Footer -->
     <?php include '../layout/footer.php'?>
     <!-- END Footer -->
