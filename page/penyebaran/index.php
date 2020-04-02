@@ -19,6 +19,8 @@
   <!-- Custom styles for this template -->
   <link href="/css/style.css" rel="stylesheet">
 
+  <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
 </head>
 
 <body>
@@ -59,27 +61,25 @@
     <section id="Indonesia" class="bg-light">
       <div class="container">
         <div class="text-center">
-          <h2 class="mb-4">Data Penyebaran Di Indonesia</h2>
+          <h2 class="mb-2">Data Penyebaran Di Indonesia</h2>
+          <h6 class= "mb-4">Sumber Data : www.kawalcorona.com</h6>
         </div>
         <div class="row">
           <div class="col-sm-12 col-md-6 p-15">
-            <img src="/assets/about/hero.jpg" alt="Peta" class="maps">
+            <img src="/assets/about/indo.svg" alt="Peta" class="maps">
           </div>
           <div class="col-sm-12 col-md-6">
-          <div class="input-group mt-3" style="width: 80%">
-            <select class="custom-select" id="inputGroupSelect01">
-              <option selected>--Seluruh Indonesia--</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-          </div>
+            <div class="input-group mt-3" style="width: 80%">
+              <select class="custom-select" id="dropdownIndo" onchange="onChangeIndo()">
+                <option value="998" selected>--Seluruh Indonesia--</option>
+              </select>
+            </div>
             <div class="card bg-warning mt-3" style="width: 80%">
               <div class="card-body  ml-4  text-white">
                 <div class="row">
                   <div class="col">
                     <h6 class="mb-2">Positif Corona</h6>
-                    <h1 class="card-title">120</h1>
+                    <h1 class="card-title" id="positifIndo">0</h1>
                   </div>
                   <div class="col-md-auto mr-4">
                     <i class="fa fa-money fa-3x mt-3" aria-hidden="true"></i>
@@ -92,7 +92,7 @@
                 <div class="row">
                   <div class="col">
                     <h6 class="mb-2">Pasien Sembuh</h6>
-                    <h1 class="card-title">120</h1>
+                    <h1 class="card-title" id="sembuhIndo">0</h1>
                   </div>
                   <div class="col-md-auto mr-4">
                     <i class="fa fa-money fa-3x mt-3" aria-hidden="true"></i>
@@ -105,7 +105,7 @@
                 <div class="row">
                   <div class="col">
                     <h6 class="mb-2">Pasien Meninggal</h6>
-                    <h1 class="card-title">120</h1>
+                    <h1 class="card-title" id="meninggalIndo">0</h1>
                   </div>
                   <div class="col-md-auto mr-4">
                     <i class="fa fa-money fa-3x mt-3" aria-hidden="true"></i>
@@ -123,27 +123,25 @@
     <section id="Global">
       <div class="container">
         <div class="text-center">
-          <h2 class="mb-4">Data Penyebaran Di Dunia</h2>          
+        <h2 class="mb-2">Data Penyebaran Global</h2>
+          <h6 class= "mb-4">Sumber Data : www.kawalcorona.com</h6>
         </div>
         <div class="row">
           <div class="col-sm-12 col-md-6 p-15">
-            <img src="/assets/about/hero.jpg" alt="Peta" class="maps">
+            <img src="/assets/about/global.svg" alt="Peta" class="maps">
           </div>
           <div class="col-sm-12 col-md-6">
-          <div class="input-group mt-3" style="width: 80%">
-            <select class="custom-select" id="inputGroupSelect01">
-              <option selected>--Seluruh Negara--</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-          </div>
+            <div class="input-group mt-3" style="width: 80%">
+              <select class="custom-select" id="dropdownGlobal" onchange="onChangeGlobal()">
+                <option value="999" selected>--Seluruh Negara--</option>
+              </select>
+            </div>
             <div class="card bg-warning mt-3 align-center" style="width: 80%">
               <div class="card-body ml-4  text-white">
                 <div class="row">
                   <div class="col">
                     <h6 class="mb-2">Positif Corona</h6>
-                    <h1 class="card-title">120</h1>
+                    <h1 class="card-title" id="positifGlobal">0</h1>
                   </div>
                   <div class="col-md-auto mr-4">
                     <i class="fa fa-money fa-3x mt-3" aria-hidden="true"></i>
@@ -156,7 +154,7 @@
                 <div class="row">
                   <div class="col">
                     <h6 class="mb-2">Pasien Sembuh</h6>
-                    <h1 class="card-title">120</h1>
+                    <h1 class="card-title" id="sembuhGlobal">0</h1>
                   </div>
                   <div class="col-md-auto mr-4">
                     <i class="fa fa-money fa-3x mt-3" aria-hidden="true"></i>
@@ -169,7 +167,7 @@
                 <div class="row">
                   <div class="col">
                     <h6 class="mb-2">Pasien Meninggal</h6>
-                    <h1 class="card-title">120</h1>
+                    <h1 class="card-title" id="meninggalGlobal">0</h1>
                   </div>
                   <div class="col-md-auto mr-4">
                     <i class="fa fa-money fa-3x mt-3" aria-hidden="true"></i>
@@ -200,8 +198,109 @@
   <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom JavaScript for this theme -->
-  <script src="/js/main.js"></script>
+  <script>
+    var onChangeIndo = function () {
+      var value = document.getElementById("dropdownIndo").value;
+      console.log(value);
+      if (value == 998) {
+        $.getJSON("https://api.kawalcorona.com/indonesia/", function (indo) {
+          document.getElementById("positifIndo").innerHTML = indo[0]["positif"];
+          document.getElementById("sembuhIndo").innerHTML = indo[0]["sembuh"];
+          document.getElementById("meninggalIndo").innerHTML = indo[0]["meninggal"];
+        });
+      } else {
+        $.getJSON("https://api.kawalcorona.com/indonesia/provinsi", function (prov) {
+          document.getElementById("positifIndo").innerHTML = prov[value]["attributes"]["Kasus_Posi"];
+          document.getElementById("sembuhIndo").innerHTML = prov[value]["attributes"]["Kasus_Semb"];
+          document.getElementById("meninggalIndo").innerHTML = prov[value]["attributes"]["Kasus_Meni"];
+        });
+      }
+    }
 
+    var onChangeGlobal = function () {
+      var value = document.getElementById("dropdownGlobal").value;
+      console.log(value);
+      if (value == 999) {
+        $.getJSON("https://api.kawalcorona.com/positif", function (global) {
+          document.getElementById("positifGlobal").innerHTML = global["value"];
+        });
+        $.getJSON("https://api.kawalcorona.com/sembuh", function (global) {
+          document.getElementById("sembuhGlobal").innerHTML = global["value"];
+        });
+        $.getJSON("https://api.kawalcorona.com/meninggal", function (global) {
+          document.getElementById("meninggalGlobal").innerHTML = global["value"];
+        });
+      } else {
+        $.getJSON("https://api.kawalcorona.com/", function (global) {
+          document.getElementById("positifGlobal").innerHTML = global[value]["attributes"]["Confirmed"];
+          document.getElementById("sembuhGlobal").innerHTML = global[value]["attributes"]["Recovered"];
+          document.getElementById("meninggalGlobal").innerHTML = global[value]["attributes"]["Deaths"];
+        });
+      }
+    }
+
+    function initializeIndo() {
+        var infoWindow = new google.maps.InfoWindow();
+        var mapOptions = {
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+
+        var map = new google.maps.Map(document.getElementById('map-canvas', mapOptions));
+
+        var bounds = new google.maps.LatLngBounds();
+
+        // $.getJSON("https://api.kawalcorona.com/indonesia/provinsi", function (prov) {
+        //   document.getElementById("positifIndo").innerHTML = prov[value]["attributes"]["Kasus_Posi"];
+        //   document.getElementById("sembuhIndo").innerHTML = prov[value]["attributes"]["Kasus_Semb"];
+        //   document.getElementById("meninggalIndo").innerHTML = prov[value]["attributes"]["Kasus_Meni"];
+        // });
+        // // addMarker($lat, $lon, '<b>$nama</b>')
+
+        function addMarker(lat, lng, info) {
+          var lokasi = new google.maps.LatLng(lat, lng);
+          bounds.extend(lokasi);
+          var marker = new google.maps.Marker({
+            map: map,
+            position: lokasi
+          });
+
+          map.fitBounds(bounds);
+          bindInfoWindow(marker, map, infoWindow, info);
+        }
+
+        function bindInfoWindow(marker, map, infoWindow, html) {
+          google.maps.event.addListener(marker, 'click', function () {
+            infoWindow.setContent(html);
+            infoWindow.open(map, marker);
+          });
+        }
+        google.maps.event.addDomListener(window, 'load', initializeIndo);
+      }
+
+    $(document).ready(function () {
+      var getDropdownProvinsi = function () {
+        $.getJSON("https://api.kawalcorona.com/indonesia/provinsi", function (prov) {
+          for (var i = 0; i < prov.length; i++) {
+            let html = '<option value="' + i + '">' + prov[i]["attributes"]["Provinsi"] + '</option>';
+            $('#dropdownIndo').append(html);
+          }
+        });
+      }
+      var getDropdownGlobal = function () {
+        $.getJSON("https://api.kawalcorona.com/", function (global) {
+          for (var i = 0; i < global.length; i++) {
+            let html = '<option value="' + i + '">' + global[i]["attributes"]["Country_Region"] + '</option>';
+            $('#dropdownGlobal').append(html);
+          }
+        });
+      }
+      onChangeIndo();
+      getDropdownProvinsi();
+
+      onChangeGlobal();
+      getDropdownGlobal();
+    });
+  </script>
 </body>
 
 </html>

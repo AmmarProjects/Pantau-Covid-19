@@ -83,8 +83,6 @@
     <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom JavaScript for this theme -->
-    <script src="/js/main.js"></script>
-
     <script>
         $(document).ready(function () {
             $.getJSON("/FAQ.json", function (json) {
