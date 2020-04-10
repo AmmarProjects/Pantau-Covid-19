@@ -73,7 +73,10 @@
           </div>
           <div class="col-sm-12 col-md-6">
             <h2 class="mt-4 mb-2">Kenali Gejala Covid-19</h2>
-            <p class="lead">Gejala umum berupa demam ≥38C, batuk, pilek, nyeri tenggorokan dan sesak napas. Jika ada orang dengan gejala tersebut pernah melakukan perjalanan ke Tiongkok (terutama Wuhan), atau pernah merawat/kontak dengan penderita COVID-19, maka terhadap orang tersebut akan dilakukan pemeriksaan laboratorium lebih lanjut untuk memastikan diagnosisnya.</p>
+            <p class="lead">Gejala umum berupa demam ≥38C, batuk, pilek, nyeri tenggorokan dan sesak napas. Jika ada
+              orang dengan gejala tersebut pernah melakukan perjalanan ke Tiongkok (terutama Wuhan), atau pernah
+              merawat/kontak dengan penderita COVID-19, maka terhadap orang tersebut akan dilakukan pemeriksaan
+              laboratorium lebih lanjut untuk memastikan diagnosisnya.</p>
           </div>
         </div>
       </div>
@@ -90,7 +93,7 @@
           <div class="p-15 col-sm-12 col-md-3">
             <div class="card" style="width: 100%">
               <div class="features-card card-body text-center">
-              <img  src="assets/about/step-1.svg" style="width:80%" alt="">
+                <img src="assets/about/step-1.svg" style="width:80%" alt="">
                 <h5 class="card-title mt-2">Gunakan Masker</h5>
               </div>
             </div>
@@ -99,7 +102,7 @@
           <div class="p-15 col-sm-12 col-md-3">
             <div class="card" style="width: 100%">
               <div class="features-card card-body text-center">
-              <img  src="assets/about/step-2.svg" style="width:80%" alt="">
+                <img src="assets/about/step-2.svg" style="width:80%" alt="">
                 <h5 class="card-title mt-2">Dirumah Saja</h5>
               </div>
             </div>
@@ -108,7 +111,7 @@
           <div class="p-15 col-sm-12 col-md-3">
             <div class="card" style="width: 100%">
               <div class="features-card card-body text-center">
-              <img  src="assets/about/step-3.svg" style="width:80%" alt="">
+                <img src="assets/about/step-3.svg" style="width:80%" alt="">
                 <h5 class="card-title mt-2">Hindari Kontak Langsung</h5>
               </div>
             </div>
@@ -117,7 +120,7 @@
           <div class="p-15 col-sm-12 col-md-3">
             <div class="card" style="width: 100%">
               <div class="features-card card-body text-center">
-              <img  src="assets/about/step-4.svg" style="width:80%" alt="">
+                <img src="assets/about/step-4.svg" style="width:80%" alt="">
                 <h5 class="card-title mt-2">Menjaga Kebersihan</h5>
               </div>
             </div>
@@ -135,16 +138,16 @@
             <h2 class="mb-2">Tata Cara Mencuci Tangan</h2>
             <div class="row">
               <div class="col-4">
-                <img class="mt-4"  src="assets/about/wash-1.svg" style="width:80%" alt="">
-                  <p class="mt-2">Oleskan sabun pada tangan yang basah</p>
+                <img class="mt-4" src="assets/about/wash-1.svg" style="width:80%" alt="">
+                <p class="mt-2">Oleskan sabun pada tangan yang basah</p>
               </div>
               <div class="col-4">
-                <img class="mt-4"  src="assets/about/wash-2.svg" style="width:80%" alt="">
-               
+                <img class="mt-4" src="assets/about/wash-2.svg" style="width:80%" alt="">
+
                 <p class="mt-2"> Gosok pada kedua telapak tangan</p>
               </div>
               <div class="col-4">
-                <img class="mt-4"  src="assets/about/wash-3.svg" style="width:80%" alt="">
+                <img class="mt-4" src="assets/about/wash-3.svg" style="width:80%" alt="">
                 <p class="mt-2">Jangan lupa pada punggung tangan</p>
               </div>
               <div class="col-4">
@@ -152,18 +155,20 @@
                 <p class="mt-2">Bersihkan pada sela-sela jari</p>
               </div>
               <div class="col-4">
-                <img class="mt-4"  src="assets/about/wash-5.svg" style="width:80%" alt="">
+                <img class="mt-4" src="assets/about/wash-5.svg" style="width:80%" alt="">
                 <p class="mt-2">Bilas dengan air bersih</p>
               </div>
               <div class="col-4">
-                <img class="mt-4"  src="assets/about/wash-6.svg" style="width:80%" alt="">
+                <img class="mt-4" src="assets/about/wash-6.svg" style="width:80%" alt="">
                 <p class="mt-2">Keringkan dengan lap/tisu bersih</p>
               </div>
             </div>
           </div>
           <div class="col-sm-12 col-md-6">
-              <img class="mt-5" src="assets/about/wash-hand.svg" style="height:100%" alt="">
+            <div class="text-center">
+              <img class="mt-5" src="assets/about/wash-hand.svg" style="width:100%" alt="">
             </div>
+          </div>
         </div>
     </section>
     <!-- END Perlindungan Section -->
@@ -174,17 +179,17 @@
     <?php include 'page/layout/footer.php'?>
 
     <!-- END Footer -->
-  <!-- END Modal -->
+    <!-- END Modal -->
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="/vendor/jquery/jquery.min.js"></script>
-  <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Plugin JavaScript -->
-  <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
 
-  <!-- Custom JavaScript for this theme -->
-  <script src="/js/main.js"></script>
+    <!-- Custom JavaScript for this theme -->
+    <script src="/js/main.js"></script>
 
 </body>
 

@@ -86,10 +86,7 @@
     <script>
         $(document).ready(function () {
             $.getJSON("/FAQ.json", function (json) {
-                // console.log(json);
                 var faq = json["faq"];
-                // console.log(faq[0]["questions"]);
-                // console.log(faq.length)
                 for (var i = 0; i < faq.length; i++) {
                     let accordion = '<div class="card my-3"> <div class="card-header" id="heading'+i+'"> <div class="mb-0"> <a class="collapsed btn-link" data-toggle="collapse" data-target="#collapse'+i+'" aria-expanded="false" aria-controls="collapse'+i+'"> <label>'+ faq[i]["questions"] +'</label></a> </div> </div> <div id="collapse'+i+'" class="collapse" aria-labelledby="heading'+i+'" data-parent="#accordion"> <div class="card-body">'+ faq[i]["answer"] +'</div></div></div>';
                     $('#accordion').append(accordion);
