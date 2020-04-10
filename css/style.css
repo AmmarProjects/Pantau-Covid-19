@@ -1,4 +1,27 @@
 /* General CSS */
+#Indonesia .card{
+  background-image: url("/assets/about/card-bg.svg");
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+#Global .card{
+  background-image: url("/assets/about/card-bg.svg");
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.bg-warning{
+  background-color: rgb(255, 142, 77) !important;
+}
+
+.bg-danger{
+  background-color: #F24849 !important;
+}
+
+.bg-primary{
+  background-color: #4E23A2 !important;
+}
 a,
 a:hover {
   color: inherit;
@@ -8,8 +31,9 @@ a:hover {
 .p-15{
   padding:15px
 }
-p{
-  text-align: justify;
+
+.bg-light{
+  background-color :rgba(85, 0, 255, 0.027)!important;
 }
 
 #hero {
@@ -17,6 +41,10 @@ p{
   background-image: url("/assets/about/hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+#hero h1{
+  font-size: 36pt;
 }
 
 section {
@@ -31,15 +59,15 @@ section {
 }
 
 .bg-covid-sd{
-  background-color: #00622f;
+  background: linear-gradient(45deg, #4E23A2 40%, #FC42FF 100%);
 }
 
 .bg-covid-sd2{
-  background-color: #019c4c;
+  background: linear-gradient(45deg, #4E23A2 50%, #5A0087 100%);
 }
 
 .bg-covid-sd3{
-  background-color: #004220;
+  background-color: #5A0087;
 }
 
 
@@ -62,7 +90,7 @@ section {
 
 .btn-call:hover {
   border-radius: 100% 100% 100% 20%;
-  background-color: #019c4c;
+  background: linear-gradient(45deg, #4E23A2 60%, #FC42FF 100%);
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 
 }
@@ -71,17 +99,18 @@ section {
   height:25%;
   width:100%;
   border-radius:360px;
-  background-color: #00622f;
+  background: linear-gradient(45deg, #4E23A2 60%, #FC42FF 100%);
   color: #fff;
 }
 
 .btn-covid-100:hover{
   color: #fff;
+  background: linear-gradient(45deg, #4E23A2 50%, #5A0087 100%);
   background-color: #019c4c;
 }
 
 .card{
-  box-shadow: 0 0px 0px 0 rgba(0,0,0,0.082), 0 10px 10px 0 rgba(0, 0, 0, 0.082);
+  box-shadow: 0 0px 0px 0 rgba(0,0,0,0.052), 0 10px 10px 0 rgba(0, 0, 0, 0.052);
   border-radius: 8px;
   border: none;
   padding: auto;
@@ -89,7 +118,7 @@ section {
 
 .card:hover{
   padding: auto;
-  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.158), 0 10px 20px 0 rgba(0,0,0,0.158);
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1), 0 10px 10px 0 rgba(0,0,0,0.1);
 
 }
 /* END General */
@@ -117,7 +146,7 @@ section {
 /* Features Section */
 .features-card{
   padding: 15%;
-  height: 400px;
+  height: 270px;
 }
 /* END Featueres */
 
@@ -200,9 +229,6 @@ section {
 }
 /* END Modal Section */
 
-.maps {
-  width: 100%;
-}
 
 #news .card{
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.123) !important;

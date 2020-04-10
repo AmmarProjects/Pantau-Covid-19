@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Pantau Corona</title>
+  <title>Pantau Covid-19</title>
 
   <!-- Bootstrap core CSS -->
   <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -56,29 +56,24 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="hero" class="bg-dark">
+    <section id="hero">
       <div class="container text-center">
-        <h1 class="text-white">#DiRumahSaja</h1>
+        <h1 class="text-white mt-5">#DiRumahSaja</h1>
         <h3 class="text-white">Mari Putus Rantai Penyebaran Coronavirus</h3>
       </div>
     </section>
     <!-- END Hero Section -->
 
     <!-- Gejala Section -->
-    <section id="perlindungan" class="bg-light">
+    <section id="perlindungan">
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-6">
+            <img src="assets/about/protect.svg" style="width:100%" alt="">
           </div>
           <div class="col-sm-12 col-md-6">
-            <h2 class="mb-2">Kenali Gejala Covid-19</h2>
-            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe debitis cumque eius
-              exercitationem doloribus distinctio! Assumenda, repudiandae! Quam libero possimus porro facere amet
-              facilis
-              veniam similique accusamus nisi aliquid quis laudantium iure voluptatum id aliquam enim esse inventore
-              veritatis quisquam unde, minima officia neque deleniti voluptatibus! Obcaecati accusantium consequuntur
-              quo,
-              dignissimos, aliquid ut, officiis excepturi alias maxime quae mollitia nemo.</p>
+            <h2 class="mt-4 mb-2">Kenali Gejala Covid-19</h2>
+            <p class="lead">Gejala umum berupa demam ≥38C, batuk, pilek, nyeri tenggorokan dan sesak napas. Jika ada orang dengan gejala tersebut pernah melakukan perjalanan ke Tiongkok (terutama Wuhan), atau pernah merawat/kontak dengan penderita COVID-19, maka terhadap orang tersebut akan dilakukan pemeriksaan laboratorium lebih lanjut untuk memastikan diagnosisnya.</p>
           </div>
         </div>
       </div>
@@ -86,7 +81,7 @@
     <!-- END Gejala Section -->
 
     <!-- Pencegahan Section -->
-    <section id="pencegahan">
+    <section id="pencegahan" class="bg-light">
       <div class="container">
         <div class="title-section col-12">
           <h2>Pencegahan Virus Corona</h2>
@@ -95,11 +90,8 @@
           <div class="p-15 col-sm-12 col-md-3">
             <div class="card" style="width: 100%">
               <div class="features-card card-body text-center">
-                <i class="fa fa-money fa-3x" aria-hidden="true"></i>
-                <h5 class="card-title mt-2">Card title</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam sint porro, quam
-                  libero nam commodi eaque atque error fugiat sit sequi doloribus qui quia molestias adipisci quae ipsa
-                  consequatur officia.</p>
+              <img  src="assets/about/step-1.svg" style="width:80%" alt="">
+                <h5 class="card-title mt-2">Gunakan Masker</h5>
               </div>
             </div>
           </div>
@@ -107,11 +99,8 @@
           <div class="p-15 col-sm-12 col-md-3">
             <div class="card" style="width: 100%">
               <div class="features-card card-body text-center">
-                <i class="fa fa-bar-chart fa-3x" aria-hidden="true"></i>
-                <h5 class="card-title mt-2">Card title</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam sint porro, quam
-                  libero nam commodi eaque atque error fugiat sit sequi doloribus qui quia molestias adipisci quae ipsa
-                  consequatur officia.</p>
+              <img  src="assets/about/step-2.svg" style="width:80%" alt="">
+                <h5 class="card-title mt-2">Dirumah Saja</h5>
               </div>
             </div>
           </div>
@@ -119,11 +108,8 @@
           <div class="p-15 col-sm-12 col-md-3">
             <div class="card" style="width: 100%">
               <div class="features-card card-body text-center">
-                <i class="fa fa-buysellads fa-3x" aria-hidden="true"></i>
-                <h5 class="card-title mt-2">Card title</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam sint porro, quam
-                  libero nam commodi eaque atque error fugiat sit sequi doloribus qui quia molestias adipisci quae ipsa
-                  consequatur officia.</p>
+              <img  src="assets/about/step-3.svg" style="width:80%" alt="">
+                <h5 class="card-title mt-2">Hindari Kontak Langsung</h5>
               </div>
             </div>
           </div>
@@ -131,11 +117,8 @@
           <div class="p-15 col-sm-12 col-md-3">
             <div class="card" style="width: 100%">
               <div class="features-card card-body text-center">
-                <i class="fa fa-buysellads fa-3x" aria-hidden="true"></i>
-                <h5 class="card-title mt-2">Card title</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam sint porro, quam
-                  libero nam commodi eaque atque error fugiat sit sequi doloribus qui quia molestias adipisci quae ipsa
-                  consequatur officia.</p>
+              <img  src="assets/about/step-4.svg" style="width:80%" alt="">
+                <h5 class="card-title mt-2">Menjaga Kebersihan</h5>
               </div>
             </div>
           </div>
@@ -145,21 +128,43 @@
     <!-- END Pencegahan Section -->
 
     <!-- Perlindungan Section -->
-    <section id="perlindungan" class="bg-light">
+    <section id="perlindungan">
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-6">
-          <h2 class="mb-2">Tata Cara Mencuci Tangan</h2>
-          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe debitis cumque eius
-              exercitationem doloribus distinctio! Assumenda, repudiandae! Quam libero possimus porro facere amet
-              facilis
-              veniam similique accusamus nisi aliquid quis laudantium iure voluptatum id aliquam enim esse inventore
-              veritatis quisquam unde, minima officia neque deleniti voluptatibus! Obcaecati accusantium consequuntur
-              quo,
-              dignissimos, aliquid ut, officiis excepturi alias maxime quae mollitia nemo.</p>
+            <h2 class="mb-2">Tata Cara Mencuci Tangan</h2>
+            <div class="row">
+              <div class="col-4">
+                <img class="mt-4"  src="assets/about/wash-1.svg" style="width:80%" alt="">
+                  <p class="mt-2">Oleskan sabun pada tangan yang basah</p>
+              </div>
+              <div class="col-4">
+                <img class="mt-4"  src="assets/about/wash-2.svg" style="width:80%" alt="">
+               
+                <p class="mt-2"> Gosok pada kedua telapak tangan</p>
+              </div>
+              <div class="col-4">
+                <img class="mt-4"  src="assets/about/wash-3.svg" style="width:80%" alt="">
+                <p class="mt-2">Jangan lupa pada punggung tangan</p>
+              </div>
+              <div class="col-4">
+                <img class="mt-4" src="assets/about/wash-4.svg" style="width:80%" alt="">
+                <p class="mt-2">Bersihkan pada sela-sela jari</p>
+              </div>
+              <div class="col-4">
+                <img class="mt-4"  src="assets/about/wash-5.svg" style="width:80%" alt="">
+                <p class="mt-2">Bilas dengan air bersih</p>
+              </div>
+              <div class="col-4">
+                <img class="mt-4"  src="assets/about/wash-6.svg" style="width:80%" alt="">
+                <p class="mt-2">Keringkan dengan lap/tisu bersih</p>
+              </div>
+            </div>
           </div>
+          <div class="col-sm-12 col-md-6">
+              <img class="mt-5" src="assets/about/wash-hand.svg" style="height:100%" alt="">
+            </div>
         </div>
-      </div>
     </section>
     <!-- END Perlindungan Section -->
 
@@ -167,9 +172,8 @@
     <?php include 'page/layout/contact.php'?>
     <!-- Footer -->
     <?php include 'page/layout/footer.php'?>
-    <!-- END Footer -->
-  </div>
 
+    <!-- END Footer -->
   <!-- END Modal -->
 
   <!-- Bootstrap core JavaScript -->

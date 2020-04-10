@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Pantau Corona</title>
+  <title>Pantau Covid-19</title>
 
   <!-- Bootstrap core CSS -->
   <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -56,20 +56,17 @@
     </nav>
 
     <!-- Tentang Section -->
-    <section id="tentang">
+    <section id="tentang" class="mt-5">
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-6">
+            <img src="/assets/about/logo-COVID.svg" alt="Logo Pavid" style="width:80%;">
           </div>
           <div class="col-sm-12 col-md-6">
-            <h2 class="mb-2">Tentang Pantau Corona</h2>
-            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe debitis cumque eius
-              exercitationem doloribus distinctio! Assumenda, repudiandae! Quam libero possimus porro facere amet
-              facilis
-              veniam similique accusamus nisi aliquid quis laudantium iure voluptatum id aliquam enim esse inventore
-              veritatis quisquam unde, minima officia neque deleniti voluptatibus! Obcaecati accusantium consequuntur
-              quo,
-              dignissimos, aliquid ut, officiis excepturi alias maxime quae mollitia nemo.</p>
+            <h2 class="mb-2">Tentang Pavid</h2>
+            <p class="lead">Pavid atau Pantau Covid-19 merupakan platform web monitoring kasus wabah coronavirus yang
+              menjadi pandemi. Terdapat beberapa data pasien positif, pasien sembuh dan pasien meninggal dari berbagai
+              negara dan beberapa provinsi di Indonesia</p>
           </div>
         </div>
       </div>
@@ -81,14 +78,16 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-6">
-          <h2 class="mb-2">Sumber Data</h2>
-          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe debitis cumque eius
-              exercitationem doloribus distinctio! Assumenda, repudiandae! Quam libero possimus porro facere amet
-              facilis
-              veniam similique accusamus nisi aliquid quis laudantium iure voluptatum id aliquam enim esse inventore
-              veritatis quisquam unde, minima officia neque deleniti voluptatibus! Obcaecati accusantium consequuntur
-              quo,
-              dignissimos, aliquid ut, officiis excepturi alias maxime quae mollitia nemo.</p>
+            <h2 class="mb-2">Developer</h2>
+            <p class="lead">Ammar Muhammad merupakan desainer sekaligus web developer. Sumber data kasus Corona berasal
+              dari API pada website <a href="https://www.kawalcorona.com">www.kawalcorona.com</a> dan sumber berita
+              berasal dari <a href="http://newsapi.org/">newsapi.org</a></p>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <div class="text-center">
+          <img src="/assets/about/me.png" alt="Logo Pavid" style="width:40%;">
+
+            </div>
           </div>
         </div>
       </div>
