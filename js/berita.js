@@ -23,7 +23,7 @@
                         }
 
                         let card =
-                            '<div class="card m-4" style="height: 100%;"> <div class="card-body"><div class="row"> <div class="col-md-auto"> <img src="' +
+                            '<div class="card m-4" style="height: 100%; width:100%"> <div class="card-body"><div class="row"> <div class="col-md-auto"> <img src="' +
                             imageURL + '" class="img-news m-2" alt="Sumber : ' + news[i]["url"] +
                             '"></div>  <div class="col"><h4 class="card-title mt-3">' + news[i]["title"] +
                             '</h4> <p class="card-text">' + news[i]["description"] +

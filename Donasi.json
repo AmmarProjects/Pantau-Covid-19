@@ -1,0 +1,25 @@
+{
+    "donasi": [
+        {
+            "agen" : "Kitabisa.com",
+            "title": "Selamatkan Nyawa Sesama!",
+            "desc": "Penyebaran virus corona di Indonesia terus meluas. Dampak virus ini sangat mengkhawatirkan: Ribuan orang positif dan dalam pengawasan, sementara ratusan lainnya meninggal dunia.",
+            "link":"https://kitabisa.com/campaign/indonesialawancorona",
+            "img":"1.jpg"
+        },
+        {
+            "agen" : "Alumni Akselerasi MTsN Kota Madiun",
+            "title": "Bantu Rakyat Kecil Lawan Corona",
+            "desc": "Yuk siapkan donasimu untuk saudara-saudara kita yang membutuhkan!, Dana yang terkumpul akan didonasikan dalam bentuk sembako dan masker kain untuk warga Madiun dan sekitarnya.",
+            "link":"#",
+            "img":"2.jpg"
+        },
+        {
+            "agen" : "HMJ Teknik Informatika UIN Malang",
+            "title": "Himatif Melawan Covid-19",
+            "desc": "Salam sejahtera untuk kita semua. Dengan semakin meluasnya penularan virus COVID-19, kami dari Himpunan Mahasiswa Teknik Informatika (HIMATIF) UIN Malang turut berpartisapi mencegah virus COVID-19 😷 dengan membuka donasi. Hasil donasi akan kami salurkan kepada Aksi Cepat Tanggap (ACT) Malang. Kemudian akan dialokasikan menjadi Sprayer, APD, Bahan larutan disinfektan, dan Bahan pangan. Bantuan bisa disalurkan melalui :",
+            "link":"https://www.instagram.com/p/B-0yNfAJfdC/?utm_source=ig_web_copy_link",
+            "img":"3.jpg"
+        }
+    ]
+}

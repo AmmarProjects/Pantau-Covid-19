@@ -42,6 +42,9 @@
               <a class="nav-link js-scroll-trigger" href="/page/penyebaran/index.php">Penyebaran</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/page/donasi/index.php">Donasi</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="/page/tentang/index.php">Tentang</a>
             </li>
             <li class="nav-item">

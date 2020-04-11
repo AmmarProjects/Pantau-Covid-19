@@ -18,6 +18,7 @@
 
     <!-- Custom styles for this template -->
     <link href="/css/style.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -57,17 +58,17 @@
             </div>
         </nav>
 
-        <!-- FAQ Section -->
-        <section id="faq">
+        <!-- Donation Section -->
+        <section id="donasi">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="mb-4">Frequently Asked Questions</h2>
+                    <h2 class="mb-4">Donasi</h2>
                 </div>
-                <div id="accordion">
+                <div id="donate" class="row justify-content-md-center">
                 </div>
             </div>
         </section>
-        <!-- END FAQ Section -->
+        <!-- END Donation Section -->
 
         <!-- Kontak -->
         <?php include '../layout/contact.php'?>
@@ -85,25 +86,21 @@
     <!-- Plugin JavaScript -->
     <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Custom JavaScript for this theme -->
     <script>
         $(document).ready(function () {
-            $.getJSON("/FAQ.json", function (json) {
-                var faq = json["faq"];
-                for (var i = 0; i < faq.length; i++) {
-                    let accordion = '<div class="card my-3"> <div class="card-header" id="heading' + i +
-                        '"> <div class="mb-0"> <a class="collapsed btn-link" data-toggle="collapse" data-target="#collapse' +
-                        i + '" aria-expanded="false" aria-controls="collapse' + i + '"> <label>' + faq[
-                            i]["questions"] + '</label></a> </div> </div> <div id="collapse' + i +
-                        '" class="collapse" aria-labelledby="heading' + i +
-                        '" data-parent="#accordion"> <div class="card-body">' + faq[i]["answer"] +
-                        '</div></div></div>';
-                    $('#accordion').append(accordion);
+            $.getJSON("/Donasi.json", function (json) {
+                var data = json["donasi"];
+                for (var i = 0; i < data.length; i++) {
+                    let html =
+                        '<div class="col-sm-12 col-md-4 card m-3"><h6 class="my-2 text-secondary">' +
+                        data[i]["agen"] + '</h6><img src="/assets/donasi/' + data[i]["img"] +
+                        '" alt="Donasi" style="width:100%"> <h5 class="mt-4">' + data[i]["title"] +
+                        '</h5> <p id="desc">' + data[i]["desc"].split(" ").splice(0,15).join(" ")+" ..."+'</p> <a href="' + data[i]["link"] +
+                        '"class="btn btn-primary mb-4">Donasi Sekarang</a></div>';
+                    $('#donate').append(html);
                 }
             });
         });
     </script>
-
 </body>
-
 </html>
